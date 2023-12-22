@@ -1,0 +1,195 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+*{
+    background-image: url(Screenshot\ 2023-12-22\ 142837.png);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    color: sandybrown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    padding: 20px 0;
+    color: grey;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    color: sandybrown;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color:blanchedalmond;
+    font-weight: bold;
+    padding: 40px;
+}
+
+main {
+    padding: 20px 0;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:floralwhite;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.popup-content {
+    background:sandybrown;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 70%;
+    /* height: 600px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.popup-details {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.meal-card {
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: chocolate;
+    cursor: pointer;
+    flex: 1 0 calc(25% - 20px);
+}
+.img2{
+    height: 30vh;
+    width: 20vw;
+}
+
+#name1{
+    position: absolute;
+    left: 800px;
+    bottom: 200px;
+    color:darkkhaki;
+}
+
+#img1{
+    height: 40vh;
+    width: 20vw;
+    border: 2px solid red;
+    position: absolute;
+    left: 500px;
+    bottom: 100px;
+    
+
+}
+#h1{
+    color: white;
+    font-size: 50px;
+}
+
+#p{
+    color: sandybrown ;
+}
+.close-btn{
+    color:lightblue;
+    background-color: antiquewhite;
+}
+#searchButton{
+    color: white;
+}
+#searchInput{
+    color: wheat;
+}
+#phnum{
+    color: wheat;
+}
+#emailid{
+    color: wheat;
+}
+@media (min-width: 768px) {
+    .popup-details {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .grid-container {
+        justify-content: space-between;
+    }
+
+    .meal-card {
+        flex: 1 0 calc(48% - 20px);
+    }
+
+    
+}
+
+@media (min-width: 768px) {
+    .meal-card {
+        flex: 1 0 calc(32% - 20px);
+    }
+
+    .popup-content {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .meal-card {
+        flex: 1 0 calc(24% - 20px);
+    }
+}
